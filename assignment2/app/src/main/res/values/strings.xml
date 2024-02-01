@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">snackbar</string>
+    <string name="question_text">Canberra is the capital of Australia.</string>string>
+    <string name="true_button">true</string>string>
+    <string name="false_button">false</string>string>
+
+
+    <string name ="correct_snack">Correct!!</string>string>
+    <string name ="incorrect_snack">Incorrect :(</string>string>
+</resources>
