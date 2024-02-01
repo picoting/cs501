@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">arithmetic</string>
+    <string name="instructions">input 2 numbers and select an operation</string>
+    <string name="prompt">input number</string>
+    <string name="spinner">select operation</string>
+    <string name="calculate">calculate!</string>
+    <string name="output">output</string>
+    <string name="error">please select an operation</string>
+
+    <string-array name="operators">
+        <item>add</item>
+        <item>subtract</item>
+        <item>multiply</item>
+        <item>divide</item>
+        <item>modulo</item>
+    </string-array>
 </resources>
