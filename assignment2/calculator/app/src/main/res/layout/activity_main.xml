@@ -38,13 +38,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plus"
-            android:onClick="operate"/>
+            android:onClick="operateClick"/>
         <Button
             android:id="@+id/multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/multiply"
-            android:onClick="operate"/>
+            android:onClick="operateClick"/>
     </LinearLayout>
 
     <LinearLayout
@@ -74,13 +74,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/minus"
-            android:onClick="operate"/>
+            android:onClick="operateClick"/>
         <Button
             android:id="@+id/divide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/divide"
-            android:onClick="operate"/>
+            android:onClick="operateClick"/>
     </LinearLayout>
 
     <LinearLayout
@@ -112,13 +112,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sqrt"
-            android:onClick="operate"/>
+            android:onClick="operateClick"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:onClick="deleteClick"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:onClick="clearClick"/>
         <Button
             android:id="@+id/zero"
             android:layout_width="wrap_content"

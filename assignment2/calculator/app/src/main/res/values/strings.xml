@@ -4,9 +4,12 @@
     <string name="minus">-</string>
     <string name="multiply">*</string>
     <string name="divide">/</string>
-    <string name="sqrt">sqrt</string>
+    <string name="sqrt">√</string>
     <string name="equals">=</string>
     <string name="dot">.</string>
+    <string name="delete">del</string>
+    <string name="clear">clear</string>
+
 
     <string name="one">1</string>
     <string name="two">2</string>
