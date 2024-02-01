@@ -9,7 +9,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/app_name" />
+        android:layout_gravity="end"
+        android:text="" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,27 +19,32 @@
             android:id="@+id/one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/one" />
+            android:text="@string/one"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/two" />
+            android:text="@string/two"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/three" />
+            android:text="@string/three"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plus" />
+            android:text="@string/plus"
+            android:onClick="operate"/>
         <Button
             android:id="@+id/multiply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/multiply" />
+            android:text="@string/multiply"
+            android:onClick="operate"/>
     </LinearLayout>
 
     <LinearLayout
@@ -49,27 +55,32 @@
             android:id="@+id/four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/four" />
+            android:text="@string/four"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/five" />
+            android:text="@string/five"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/six"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/six" />
+            android:text="@string/six"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/minus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/minus" />
+            android:text="@string/minus"
+            android:onClick="operate"/>
         <Button
             android:id="@+id/divide"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/divide" />
+            android:text="@string/divide"
+            android:onClick="operate"/>
     </LinearLayout>
 
     <LinearLayout
@@ -81,23 +92,27 @@
             android:id="@+id/seven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/seven" />
+            android:text="@string/seven"
+            android:onClick="numberClick"/>
 
         <Button
             android:id="@+id/eight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/eight" />
+            android:text="@string/eight"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/nine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nine" />
+            android:text="@string/nine"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/sqrt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sqrt" />
+            android:text="@string/sqrt"
+            android:onClick="operate"/>
     </LinearLayout>
 
     <LinearLayout
@@ -108,12 +123,14 @@
             android:id="@+id/zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/zero" />
+            android:text="@string/zero"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/dot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dot" />
+            android:text="@string/dot"
+            android:onClick="numberClick"/>
         <Button
             android:id="@+id/equals"
             android:layout_width="wrap_content"

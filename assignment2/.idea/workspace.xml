@@ -17,10 +17,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c107458-e11f-4da2-886e-9824c86029ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/arithmetic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arithmetic/app/src/main/java/com/example/arithmetic/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/app/src/main/java/com/example/arithmetic/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arithmetic/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arithmetic/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/androidTest/java/com/example/calculator/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/java/com/example/calculator/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/app/src/test/java/com/example/calculator/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +89,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">

@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var inputs: TextView
     private lateinit var results: TextView
 
-    val stringval = "helloooo"
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,12 +27,23 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun equalsClick(view: View) {}
-    fun operate(view: View) {}
+    fun equalsClick(view: View) {
+        results.text = calculate()
+    }
+
+    private fun calculate(): String {
+        return ""
+    }
+
+    fun operate(view: View) {
+        if(addOperation && view is Button) {
+            inputs.append(view.text)
+            addOperation = false
+            addDecimal = true
+        }
+    }
     fun numberClick(view: View) {
         if(view is Button) {
-            inputs.text = stringval
-
             if(view.text == ".") {
                 if(addDecimal) {
                     inputs.append(view.text)
