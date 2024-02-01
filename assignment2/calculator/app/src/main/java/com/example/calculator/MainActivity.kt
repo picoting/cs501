@@ -31,68 +31,23 @@ class MainActivity : AppCompatActivity() {
 
     fun equalsClick(view: View) {
         results.text = calculateResults()
+        inputs.text = ""
     }
 
-    /*
-    private fun calculate(): String {
-
-        val operatorList = operatorList()
-        if(operatorList.size == 0) {
-            return ""
-        }
-
-        var result = operatorList[0] as? Float ?: return ""
-        var currentOperator: Char? = null
-
-        for (i in 1 until operatorList.size) {
-            val element = operatorList[i]
-            when {
-                element is Char -> {
-                    currentOperator = element
-                }
-                element is Float && currentOperator != null -> {
-
-                    //result = calculateOperation(result, element, currentOperator)
-
-                    result = 8943059.00.toFloat()
-                    currentOperator = null
-                }
-            }
-        }
-
-
-        // Return the result as a String
-        return result.toString()
-    }
-
-
-
-        private fun calculateOperation(result: Float, number: Float, operator: Char): Float {
-            return when (operator) {
-                '+' -> result + number
-                '-' -> result - number
-                '*' -> result * number
-                '/' -> if (number != 0f) result / number else Float.NaN // Check for division by zero
-                '√' -> sqrt(number)
-                else -> result // Unknown operator, just return the result so far
-            }
-        }
-
-     */
 
     private fun calculateResults(): String
     {
-        val digitsOperators = digitsOperators()
+        val digitsOperators = operatorList()
         if(digitsOperators.isEmpty()) return ""
 
-        val timesDivision = timesDivisionCalculate(digitsOperators)
-        if(timesDivision.isEmpty()) return ""
+        val mulDivMod = mulDivModCalculate(digitsOperators)
+        if(mulDivMod.isEmpty()) return ""
 
-        val result = addSubtractCalculate(timesDivision)
+        val result = addSubCalculate(mulDivMod)
         return result.toString()
     }
 
-    private fun addSubtractCalculate(passedList: MutableList<Any>): Float
+    private fun addSubCalculate(passedList: MutableList<Any>): Float
     {
         var result = passedList[0] as Float
 
@@ -112,43 +67,42 @@ class MainActivity : AppCompatActivity() {
         return result
     }
 
-    private fun timesDivisionCalculate(passedList: MutableList<Any>): MutableList<Any>
+    private fun mulDivModCalculate(passedList: MutableList<Any>): MutableList<Any>
     {
         var list = passedList
-        while (list.contains('x') || list.contains('/'))
+        while (list.contains('x') || list.contains('/') || list.contains('%'))
         {
-            list = calcTimesDiv(list)
+            list = mulDivModFunc(list)
         }
         return list
     }
 
-    private fun calcTimesDiv(passedList: MutableList<Any>): MutableList<Any>
+    private fun mulDivModFunc(passedList: MutableList<Any>): MutableList<Any>
     {
         val newList = mutableListOf<Any>()
         var restartIndex = passedList.size
 
-        for(i in passedList.indices)
-        {
-            if(passedList[i] is Char && i != passedList.lastIndex && i < restartIndex)
-            {
+        for(i in passedList.indices) {
+            if(passedList[i] is Char && i != passedList.lastIndex && i < restartIndex) {
                 val operator = passedList[i]
-                val prevDigit = passedList[i - 1] as Float
-                val nextDigit = passedList[i + 1] as Float
-                when(operator)
-                {
-                    'x' ->
-                    {
-                        newList.add(prevDigit * nextDigit)
+                val prev = passedList[i-1] as Float
+                val next = passedList[i + 1] as Float
+                when(operator) {
+                    'x' -> {
+                        newList.add(prev * next)
                         restartIndex = i + 1
                     }
-                    '/' ->
-                    {
-                        newList.add(prevDigit / nextDigit)
+                    '/' -> {
+                        newList.add(prev/ next)
                         restartIndex = i + 1
                     }
-                    else ->
-                    {
-                        newList.add(prevDigit)
+
+                    '%' -> {
+                        newList.add(prev % next)
+                        restartIndex = i + 1
+                    }
+                    else -> {
+                        newList.add(prev)
                         newList.add(operator)
                     }
                 }
@@ -160,29 +114,6 @@ class MainActivity : AppCompatActivity() {
 
         return newList
     }
-
-    private fun digitsOperators(): MutableList<Any>
-    {
-        val list = mutableListOf<Any>()
-        var currentDigit = ""
-        for(character in inputs.text)
-        {
-            if(character.isDigit() || character == '.')
-                currentDigit += character
-            else
-            {
-                list.add(currentDigit.toFloat())
-                currentDigit = ""
-                list.add(character)
-            }
-        }
-
-        if(currentDigit != "")
-            list.add(currentDigit.toFloat())
-
-        return list
-    }
-
 
     private fun operatorList(): MutableList<Any> {
             val list = mutableListOf<Any>()
@@ -211,6 +142,8 @@ class MainActivity : AppCompatActivity() {
             addDecimal = true
         }
     }
+
+    //button functions
     fun numberClick(view: View) {
         if(view is Button) {
             if(view.text == ".") {

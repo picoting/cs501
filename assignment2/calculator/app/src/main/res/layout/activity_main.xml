@@ -111,7 +111,7 @@
             android:id="@+id/sqrt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sqrt"
+            android:text="@string/modulo"
             android:onClick="operateClick"/>
     </LinearLayout>
 

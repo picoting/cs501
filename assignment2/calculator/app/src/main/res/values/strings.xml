@@ -4,7 +4,7 @@
     <string name="minus">-</string>
     <string name="multiply">*</string>
     <string name="divide">/</string>
-    <string name="sqrt">√</string>
+    <string name="modulo">%</string>
     <string name="equals">=</string>
     <string name="dot">.</string>
     <string name="delete">del</string>
