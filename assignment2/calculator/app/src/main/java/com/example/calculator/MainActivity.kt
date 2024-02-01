@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     private fun mulDivModCalculate(passedList: MutableList<Any>): MutableList<Any>
     {
         var list = passedList
-        while (list.contains('x') || list.contains('/') || list.contains('%'))
+        while (list.contains('*') || list.contains('/') || list.contains('%'))
         {
             list = mulDivModFunc(list)
         }
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                 val prev = passedList[i-1] as Float
                 val next = passedList[i + 1] as Float
                 when(operator) {
-                    'x' -> {
+                    '*' -> {
                         newList.add(prev * next)
                         restartIndex = i + 1
                     }
@@ -116,22 +116,24 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun operatorList(): MutableList<Any> {
-            val list = mutableListOf<Any>()
-            var digit = ""
-            for(char in inputs.text) {
-                if(char.isDigit() || char == '.') {
-                    digit += char
-                }
-                else {
-                    list.add(digit.toFloat())
-                    digit = ""
-                }
+        val list = mutableListOf<Any>()
+        var currentDigit = ""
+        for(character in inputs.text)
+        {
+            if(character.isDigit() || character == '.')
+                currentDigit += character
+            else
+            {
+                list.add(currentDigit.toFloat())
+                currentDigit = ""
+                list.add(character)
             }
+        }
 
-            if(digit != "") {
-                list.add(digit.toFloat())
-            }
-            return list
+        if(currentDigit != "")
+            list.add(currentDigit.toFloat())
+
+        return list
         }
 
 
